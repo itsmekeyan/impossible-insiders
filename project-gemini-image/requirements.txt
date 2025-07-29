@@ -1,0 +1,14 @@
+Flask==2.3.3
+google-cloud-vision==3.4.4
+google-cloud-pubsub==2.18.4
+gunicorn==21.2.0
+google-cloud-bigquery==3.20.0
+numpy==1.26.4
+pyarrow>=3.0.0 
+json_repair
+google-cloud-aiplatform
+google-cloud-storage
+google-cloud-firestore
+functions-framework
+flask
+google-generativeai
