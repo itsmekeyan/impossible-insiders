@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+ingestion_cloud_function.egg-info/PKG-INFO
+ingestion_cloud_function.egg-info/SOURCES.txt
+ingestion_cloud_function.egg-info/dependency_links.txt
+ingestion_cloud_function.egg-info/requires.txt
+ingestion_cloud_function.egg-info/top_level.txt
+utils/common_utils.py
+utils/gemini_segmentation.py
+utils/timesfm_forecasting.py
+utils/vision_ml.py

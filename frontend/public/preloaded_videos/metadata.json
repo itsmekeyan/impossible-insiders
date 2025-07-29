@@ -1,0 +1,23 @@
+[
+  {
+    "camera_id": "camera_b",
+    "zone_id": "Zone B",
+    "location_lat": "24.579621",
+    "location_long": "73.612235",
+    "video_path": "public/preloaded_videos/Zone B.mp4"
+  },
+  {
+    "camera_id": "camera_c",
+    "zone_id": "Zone C",
+    "location_lat": "24.579786",
+    "location_long": "73.612329",
+    "video_path": "public/preloaded_videos/Zone C.mp4"
+  },
+  {
+    "camera_id": "camera_d",
+    "zone_id": "Zone D",
+    "location_lat": "24.579923",
+    "location_long": "73.611997",
+    "video_path": "public/preloaded_videos/Zone D.mp4"
+  }
+]

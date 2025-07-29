@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ingestion-cloud-function"
+version = "0.1.0"
+description = "Google Cloud Function for ingestion"
+requires-python = ">=3.9"
+dependencies = [
+    "Flask==2.3.3",
+    "google-cloud-vision==3.4.4",
+    "google-cloud-pubsub==2.18.4",
+    "gunicorn==21.2.0",
+    "google-cloud-bigquery==3.20.0",
+    "numpy==1.26.4",
+    "pyarrow>=3.0.0",
+    "json_repair",
+    "google-cloud-aiplatform",
+    "google-cloud-storage",
+    "google-cloud-firestore",
+    "functions-framework",
+    "google-generativeai",
+    "google-genai",
+]
+
+[tool.setuptools]
+packages = ["utils"] 

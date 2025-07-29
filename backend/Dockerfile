@@ -1,0 +1,34 @@
+# Use the official Python runtime as a parent image
+FROM python:3.9-slim
+
+# Set environment variables
+ENV PYTHONUNBUFFERED=1
+ENV PORT=8080
+
+# Set the working directory
+WORKDIR /app
+
+# Copy requirements first for better caching
+COPY requirements.txt .
+
+# Install dependencies
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy the application code
+COPY . .
+
+# Ensure config directory exists
+RUN mkdir -p /app/config
+
+# Create a non-root user, but ensure they can access config
+RUN useradd --create-home --shell /bin/bash app && \
+    chown -R app:app /app && \
+    chmod -R 755 /app/config
+
+USER app
+
+# Expose the port
+EXPOSE 8080
+
+# Run the application with Gunicorn
+CMD exec uvicorn --host 0.0.0.0 --port 8080 main:app
